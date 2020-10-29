@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
     <script src="vendors/fontawesome/js/all.js"></script>
     <title>First Time Fix It - Kansas City, MO, Auto Repair</title>
+    <style>
+      .parallax {
+        position: relative;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #parallax1 {
+        background-image: url(images/photos/wrenches.jpg);
+        min-height: 301px;
+      }
+      #parallax2 {
+        background-image: url(images/photos/inspect.jpg);
+        min-height: 120px;
+      }
+    </style>
 </head>
 <body>
   <!--Navigation-->
@@ -34,13 +51,13 @@
     <div class="navbar-nav container-fluid">
       <div class="row container-fluid">
         <li class="nav-item col-3">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#services">Services</a>
         </li>
         <li class="nav-item col-3">
-          <a class="nav-link" href="#">Reviews</a>
+          <a class="nav-link" href="#reviews">Reviews</a>
         </li>
         <li class="nav-item col-3">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
         <li class="nav-item col-3">
           <a class="nav-link" href="#">About</a>
@@ -48,23 +65,26 @@
       </div>  
     </div>
   </header>
-
-  <div class="jumbotron jumbotron-fluid mb-0 border-bottom">
-    <div class="container m-0">
-      <h1>First Time Fix It</h1>
-      <p class="lead bg-success pt-2 pr-2 pb-2 pl-1 text-white">Open daily from 7:30 a.m. to 6 p.m.</p>
-      <p><strong>First Time Fix It</strong> is a veteran-owned auto repair shop in Kansas City, MO. We deliver quality repairs at reasonable prices to keep you safe and happy.</p>
-      <button type="button" class="btn btn-primary d-block mx-auto">
-        <a href="#" class="text-white">Call to Schedule Service</a>
-      </button>
-    </div>
-  </div>
+<!--Site Header-->
+    <div class="parallax" id="parallax1">
+      <div class="container-fluid py-4 border-bottom">
+        <div class="container bg-light p-3 my-auto text-center">
+          <h1>First Time Fix It</h1>
+          <p class="lead bg-success pt-2 pr-2 pb-2 pl-1 text-white">Open daily from 7:30 a.m. to 6 p.m.</p>
+          <p><strong>First Time Fix It</strong> is a veteran-owned auto repair shop in Kansas City, MO. We deliver quality repairs at reasonable prices to keep you safe and happy.</p>
+          <button type="button" class="btn btn-primary d-block mx-auto">
+            <a href="#" class="text-white">Call to Schedule Service</a>
+          </button>
+        </div>
+      </div>
+    </div>  
   <!--Our Services-->
-  <div class="container-fluid bg-light border-bottom">
+  <a id="services"></a>
+  <div class="container-fluid bg-light border-bottom" style="padding-top:25px">
     <div class="container pt-3">
       <h2>Our Services</h2>
       <p>Whether it's routine service or a major repair, we promise that you will be completely satisfied with our work.</p>
-      <p>We provide a <strong>12-month/12,000-mile warranty</strong> with all of our repairs for your peace of mind.</p>
+      <p><mark>We provide a <strong>12-month/12,000-mile warranty</strong> with all of our repairs for your peace of mind.</mark></p>
     </div>
     <!--Begin Maint. Accordion-->
     <div class="container">
@@ -72,27 +92,27 @@
         <div class="accordion" id="maintenanceAccordion">
           <div class="card">
             <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fas fa-oil-can"></i> Full Synthetic Oil Change</button>									
-                </h2>
+              <h3 class="mb-0">
+                <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fas fa-oil-can"></i> Full Synthetic Oil Change</button>									
+              </h3>
             </div>
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#maintenanceAccordion">
-                <div class="card-body">
-                    <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
-                </div>
+              <div class="card-body">
+                <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages.
+              </div>  
             </div>
-        </div>
+          </div>
         <div class="card">
-            <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fas fa-tint"></i> Fluid Exchanges and Flushes</button>
-                </h2>
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fas fa-tint"></i> Fluid Exchanges and Flushes</button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#maintenanceAccordion">
+            <div class="card-body">
+              <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
             </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#maintenanceAccordion">
-                <div class="card-body">
-                    <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
-                </div>
-            </div>
+          </div>
         </div>
         <button type="button" class="btn btn-primary d-block mx-auto my-3">
           <a href="#" class="text-white">Call to Schedule Service</a>
@@ -166,36 +186,80 @@
         <a href="#" class="text-white">Call to Schedule Service</a>
       </button>
     </div>
-  </div>  
-    <div class="container-fluid border-bottom">
-      <div class="container pt-3">
-        <h2>Reviews</h2>
-        <p>Check out what our customers are sayings.</p>
+  </div>
+  <div class="parallax" id="parallax2">
+    <div class="container-fluid py-5">
+      <div class="container alert alert-info py-auto mb-0">
+        <p class="text-center mb-0 lead"><strong>Enjoy a 12,000-month/12,000-mile warranty on all repairs.</strong></p>
       </div>
-      <div class="container">
-        <div id="reveiwsCarousel" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <blockquote class="blockquote">
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-              </blockquote>
+  </div>
+  </div> 
+<!--Reviews-->
+  <a id="reviews"></a>
+  <div class="container-fluid border-bottom">
+    <div class="container pt-3" style="padding-top:25px">
+      <h2>Reviews</h2>
+      <p>Check out what our customers are saying.</p>
+    </div>
+  </div>
+<!--Contact-->
+  <a id="contact"></a>
+  <div class="container-fluid bg-light border-bottom">
+    <div class="container pt-3" style="padding-top:25px">
+      <h2>Contact</h2>
+      <p>Use the form below to contact us. Arrange an appointment, request a quote or submit a question.</p>
+      <p>You can also <a href="#">call us</a> during business hours.</p>
+    </div>
+    <div class="container">
+      <div class="form">
+        <div class="form-group">
+          <label for="name"><strong>Name</strong></label>
+          <input type="text" class="form-control" id="name" placeholder="First and Last Name">
+        </div>
+        <div class="form-group">
+          <label for="email"><strong>Email</strong></label>
+          <input type="email" class="form-control" id="email" placeholder="username@example.com">
+        </div>
+        <div class="form-group">
+          <label for="phone"><strong>Phone</strong></label>
+          <input type="tel" class="form-control" id="phone" placeholder="(123) 456-7890">
+        </div>
+        <label><strong>Contact Preference</strong></label>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Phone</label>
             </div>
-            <div class="carousel-item">
-              <blockquote class="blockquote">
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-              </blockquote>
-            </div>
-            <div class="carousel-item">
-              <blockquote class="blockquote">
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-              </blockquote>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Email</label>
             </div>
           </div>
+        <div class="form-group">
+          <label for="message"><strong>Message</strong></label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Please include your vehicle's year, make and model, if applicable to your inquiry."></textarea>
         </div>
-      </div> 
+        <button class="btn btn-primary d-block mx-auto mb-3" type="button">Submit</button>
+      </div>
+    </div>
+  </div>
+<!--About-->    
+      <div class="container-fluid border-bottom">
+        <div class="container pt-3">
+          <h2>About</h2>
+          <p class="lead">Upfront. Honest. Down-to-Earth.</p>
+          <p></p>
+        </div>
+      </div>
+      <div class="container-fluid bg-dark">
+        <footer class="container text-white">
+          <div class="row">
+            <div class="col-12">
+              <p>First Time Fix It</p>
+            </div>
+          </div>
+        </footer>
+      </div>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="vendors/jquery/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
