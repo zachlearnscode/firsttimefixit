@@ -18,245 +18,284 @@
       }
       #parallax1 {
         background-image: url(images/photos/wrenches.jpg);
-        min-height: 301px;
+        min-height: 350px;
       }
       #parallax2 {
         background-image: url(images/photos/engine2.jpg);
         min-height: 130px;
       }
+      .toTopButton {
+        width: 50px;
+        height: 50px;
+        border: .5px solid black;
+        border-radius: 50%;
+        z-index: 100;
+        position: fixed;
+        bottom: 55px;
+        right: 15px;
+        opacity: 0;
+        transition: 0.4s all ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .showBtn {
+        opacity: .8;
+      }
+      #arrow {
+        width: 70%;
+        height: 70%;
+      }
     </style>
 </head>
 <body>
-  <!--Navigation-->
-  <header class="navbar border-bottom">
+  <div class="toTopButton bg-light"><i id="arrow" class="fas fa-arrow-up"></i></div>
+<!--Navigation-->  
+  <header class="container-fluid navbar border-bottom">
     <!--Phone/Address-->
-    <div class="navbar-nav fixed-top bg-light container">
-      <div class="row container-fluid">
-        <li class="nav-item col-6 text-center">
-          <a class="nav-link" href="#"><i class="fas fa-phone-alt"></i> (816) 500-0070
-          </a>
-        </li>
-        <li class="nav-item col-6 text-center">
-          <a class="nav-link" href="#"><i class="fas fa-map-marker-alt"></i> Get Directions</a>
-        </li>
-      </div>  
+    <div class="navbar-nav fixed-top bg-light d-flex flex-row justify-content-around">
+      <a class="nav-link" href="#"><i class="fas fa-phone-alt"></i> (816) 500-0070</a>
+      <a class="nav-link" href="#"><i class="fas fa-map-marker-alt"></i> Get Directions</a>
     </div>
-    <!--Logo-->
-    <div class="container" style="margin-top:45px">
-      <a class="navbar-brand">
-        <img class="col-12" src="images/logos/fullColor_transparent.png" width="15%" height="15%">
-      </a>
-    </div>
-    <!--Menu Items-->
-    <div class="navbar-nav container-fluid">
-      <div class="row container-fluid">
-        <li class="nav-item col-3">
-          <a class="nav-link" href="#services">Services</a>
+    <!--Logo and Menu-->
+    <div class="container-fluid bg-white text-center navbar-nav" style="margin-top:45px">
+      <div class="row">
+        <img class="col-12 navbar-brand img-fluid" src="images/logos/fullColor_transparent.png" style="max-width:350px;max-height:350px">
+      </div>
+      <div class="row">
+        <li class="col-3">
+          <a class="nav-link nav-item" href="#services">Services</a>
         </li>
-        <li class="nav-item col-3">
-          <a class="nav-link" href="#reviews">Reviews</a>
+        <li class="col-3">
+          <a class="nav-link nav-item" href="#reviews">Reviews</a>
         </li>
-        <li class="nav-item col-3">
-          <a class="nav-link" href="#contact">Contact</a>
+        <li class="col-3">
+          <a class="nav-link nav-item" href="#contact">Contact</a>
         </li>
-        <li class="nav-item col-3">
-          <a class="nav-link" href="#">About</a>
+        <li class="col-3">
+          <a class="nav-link nav-item" href="#about">About</a>
         </li>
-      </div>  
+      </div> 
     </div>
   </header>
-<!--Site Header-->
-    <div class="parallax" id="parallax1">
-      <div class="container-fluid py-4 border-bottom">
-        <div class="container bg-light p-3 my-auto text-center">
-          <h1>First Time Fix It</h1>
-          <p class="lead bg-success pt-2 pr-2 pb-2 pl-1 text-white">Open daily from 7:30 a.m. to 6 p.m.</p>
-          <p><strong>First Time Fix It</strong> is a veteran-owned auto repair shop in Kansas City, MO. We deliver quality repairs at reasonable prices to keep you safe and happy.</p>
-          <button type="button" class="btn btn-primary d-block mx-auto">
-            <a href="#" class="text-white">Call to Schedule Service</a>
-          </button>
-        </div>
-      </div>
-    </div>  
-<!--Our Services-->
-  <a id="services"></a>
-  <div class="container-fluid border-bottom" style="padding-top:25px">
-    <div class="container pt-3">
-      <h2>Our Services</h2>
-      <p>Whether it's a routine service or a major repair, our experienced mechanics are committed to providing quality work at a competitive price.</p>
-      <p>Explore all of our services below.</p>
-      <p class="alert alert-info text-center p-2">All of our repairs come with a <strong>12-month/12,000-mile warranty</strong>.</p>
-    </div>
-    <!--Begin Maint. Accordion-->
-    <div class="container">
-        <div class="accordion" id="accordion">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h3 class="mb-0">
-                <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fas fa-oil-can"></i> Full Synthetic Oil Change</button>									
-              </h3>
-            </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-              <div class="card-body">
-                <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages.
-              </div>  
-            </div>
-          </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h2 class="mb-0">
-              <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fas fa-tint"></i> Fluid Exchanges and Flushes</button>
-            </h2>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body">
-              <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="repairHeadingOne">
-            <h2 class="mb-0">
-              <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#repairCollapseOne"><i class="fas fa-drum-steelpan"></i> Brakes</button>		
-            </h2>
-          </div>
-          <div id="repairCollapseOne" class="collapse" aria-labelledby="repairHeadingOne" data-parent="#accordion">
-            <div class="card-body">
-              <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="repairHeadingTwo">
-            <h2 class="mb-0">
-              <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#repairCollapseTwo"><i class="fas fa-car-battery"></i> Battery Replacement</button>									
-            </h2>
-          </div>
-          <div id="repairCollapseTwo" class="collapse" aria-labelledby="repairHeadingTwo" data-parent="#accordion">
-            <div class="card-body">
-              <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="repairHeadingThree">
-            <h2 class="mb-0">
-              <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#repairCollapseThree"><i class="fas fa-wrench"></i> Suspension</button>							
-            </h2>
-          </div>
-          <div id="repairCollapseThree" class="collapse" aria-labelledby="repairHeadingThree" data-parent="#accordion">
-            <div class="card-body">
-              <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="repairHeadingFour">
-            <h2 class="mb-0">
-              <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#repairCollapseFour"><i class="fas fa-cogs"></i> Engine</button>									
-            </h2>
-          </div>
-          <div id="repairCollapseFour" class="collapse" aria-labelledby="repairHeadingFour" data-parent="#accordion">
-            <div class="card-body">
-              <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="repairHeadingFive">
-            <h2 class="mb-0">
-              <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#repairCollapseFive"><i class="fas fa-exclamation-triangle"></i> Diagnostic</button>		
-            </h2>
-          </div>
-          <div id="repairCollapseFive" class="collapse" aria-labelledby="repairHeadingFive" data-parent="#accordion">
-            <div class="card-body">
-              <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
-            </div>
-          </div>
-        </div>
-        <button type="button" class="btn btn-primary d-block mx-auto my-3">
+<!--Site Intro-->
+    <div class="d-flex justify-content-center align-items-center parallax" id="parallax1">
+      <div class="bg-light p-3 m-3 text-center">
+        <h1>First Time Fix It</h1>
+        <p class="lead bg-success pt-2 pr-2 pb-2 pl-1 text-white">Open daily from 7:30 a.m. to 6 p.m.</p>
+        <p><strong>First Time Fix It</strong> is a veteran-owned auto repair shop in Kansas City, MO. We deliver quality repairs at reasonable prices to keep you safe and happy.</p>
+        <button type="button" class="btn btn-primary d-block mx-auto">
           <a href="#" class="text-white">Call to Schedule Service</a>
         </button>
       </div>
+    </div>  
+<!--Services-->
+  <div class="container" id="services" style="padding-top:25px">
+    <div class="pt-3">
+      <h2>Our Services</h2>
+      <p>Whether it's a routine service or a major repair, our experienced mechanics are committed to providing quality work at a competitive price.</p>
+      <p>Explore all of our services below.</p>
+      <p class="alert alert-info text-center p-2">All of our repairs come with a <strong><br>12-month/12,000-mile warranty</strong>.</p>
     </div>
+    <!--Accordion-->
+    <div class="container accordion" id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h3 class="mb-0">
+            <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fas fa-oil-can"></i> Full Synthetic Oil Change</button>									
+          </h3>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages.
+          </div>  
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fas fa-tint"></i> Fluid Exchanges and Flushes</button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="repairHeadingOne">
+          <h2 class="mb-0">
+            <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#repairCollapseOne"><i class="fas fa-drum-steelpan"></i> Brakes</button>		
+          </h2>
+        </div>
+        <div id="repairCollapseOne" class="collapse" aria-labelledby="repairHeadingOne" data-parent="#accordion">
+          <div class="card-body">
+            <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="repairHeadingTwo">
+          <h2 class="mb-0">
+            <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#repairCollapseTwo"><i class="fas fa-car-battery"></i> Battery Replacement</button>									
+          </h2>
+        </div>
+        <div id="repairCollapseTwo" class="collapse" aria-labelledby="repairHeadingTwo" data-parent="#accordion">
+          <div class="card-body">
+            <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="repairHeadingThree">
+          <h2 class="mb-0">
+            <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#repairCollapseThree"><i class="fas fa-wrench"></i> Suspension</button>							
+          </h2>
+        </div>
+        <div id="repairCollapseThree" class="collapse" aria-labelledby="repairHeadingThree" data-parent="#accordion">
+          <div class="card-body">
+            <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="repairHeadingFour">
+          <h2 class="mb-0">
+            <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#repairCollapseFour"><i class="fas fa-cogs"></i> Engine</button>									
+          </h2>
+        </div>
+        <div id="repairCollapseFour" class="collapse" aria-labelledby="repairHeadingFour" data-parent="#accordion">
+          <div class="card-body">
+            <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="repairHeadingFive">
+          <h2 class="mb-0">
+            <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#repairCollapseFive"><i class="fas fa-exclamation-triangle"></i> Diagnostic</button>		
+          </h2>
+        </div>
+        <div id="repairCollapseFive" class="collapse" aria-labelledby="repairHeadingFive" data-parent="#accordion">
+          <div class="card-body">
+            <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary d-block mx-auto my-3">
+      <a href="#" class="text-white">Call to Schedule Service</a>
+    </button>
   </div>
 <!--Reviews-->
-  <a id="reviews"></a>
-  <div class="container-fluid bg-light border-bottom">
-    <div class="container pt-3" style="padding-top:25px">
-      <h2>Reviews</h2>
-      <p>Check out what our customers are saying.</p>
-    </div>
+  <div class="container bg-light border-bottom" id="reviews" style="padding-top:25px">
+    <h2>Reviews</h2>
+    <p>Check out what our customers are saying.</p>
   </div>
 <!--Contact-->
-  <a id="contact"></a>
-  <div class="container-fluid border-bottom">
-    <div class="container pt-3" style="padding-top:25px">
-      <h2>Contact</h2>
-      <p>Use the form below to contact us. Arrange an appointment, request a quote or submit a question.</p>
-      <p>You can also <a href="#">call us</a> during business hours.</p>
-    </div>
-    <div class="container">
-      <div class="form">
-        <div class="form-group">
-          <label for="name"><strong>Name</strong></label>
-          <input type="text" class="form-control" id="name" placeholder="First and Last Name">
-        </div>
-        <div class="form-group">
-          <label for="email"><strong>Email</strong></label>
-          <input type="email" class="form-control" id="email" placeholder="username@example.com">
-        </div>
-        <div class="form-group">
-          <label for="phone"><strong>Phone</strong></label>
-          <input type="tel" class="form-control" id="phone" placeholder="(123) 456-7890">
-        </div>
-        <label><strong>Contact Preference</strong></label>
-          <div class="form-group">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-              <label class="form-check-label" for="inlineRadio1">Phone</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-              <label class="form-check-label" for="inlineRadio2">Email</label>
-            </div>
-          </div>
-        <div class="form-group">
-          <label for="message"><strong>Message</strong></label>
-          <textarea class="form-control" id="message" rows="5" placeholder="Please include your vehicle's year, make and model, if applicable to your inquiry."></textarea>
-        </div>
-        <button class="btn btn-primary d-block mx-auto mb-3" type="button">Submit</button>
+  <div class="container border-bottom" id="contact" style="padding-top:25px">
+    <h2>Contact</h2>
+    <p>Use the form below to contact us. Arrange an appointment, request a quote or submit a question.</p>
+    <p>You can also <a href="#">call us</a> during business hours.</p>
+    <!--Contact Form-->
+    <div class="container form">
+      <div class="form-group">
+        <label for="name"><strong>Name</strong></label>
+        <input type="text" class="form-control" id="name" placeholder="First and Last Name">
       </div>
+      <div class="form-group">
+        <label for="email"><strong>Email</strong></label>
+        <input type="email" class="form-control" id="email" placeholder="username@example.com">
+      </div>
+      <div class="form-group">
+        <label for="phone"><strong>Phone</strong></label>
+        <input type="tel" class="form-control" id="phone" placeholder="(123) 456-7890">
+      </div>
+      <label><strong>Contact Preference</strong></label>
+        <div class="form-group">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="phone" value="phone">
+            <label class="form-check-label" for="phone">Phone</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="email" value="email">
+            <label class="form-check-label" for="email">Email</label>
+          </div>
+        </div>
+      <div class="form-group">
+        <label for="message"><strong>Message</strong></label>
+        <textarea class="form-control" id="message" rows="5" placeholder="Please include your vehicle's year, make and model, if applicable to your inquiry."></textarea>
+      </div>
+      <button class="btn btn-primary d-block mx-auto mb-3" type="button">Submit</button>
     </div>
   </div>
-<!--About-->    
-      <div class="container-fluid bg-light border-bottom">
-        <div class="container pt-3">
-          <h2>About</h2>
-          <p class="lead">Upfront. Honest. Down-to-Earth.</p>
-          <p>First Time Fix It was established in 2017 by veteran and mechanic John Garza.</p>
-          <p>Our mechanics have more than 30 years of combined experience. We believe in providing high-quality repairs with high-quality parts at a reasonable price.</p>
-          <p>And, just to back you up, we provide a 12-month/12-000-mile warranty with all of our repairs.</p>
-          <p>We ensure the proper time is taken with every job to make sure each vehicle is accurately diagnosed and repaired without any surprises or comebacks.</p>
-          <p class="text-center"><strong>At First Time Fix It, we fix it the first time.</strong></p>
+<!--About-->  
+  <div class="container bg-light" style="padding-top:25px;margin-bottom:45px" id="about">  
+    <h2>About</h2>
+    <p class="lead">Upfront. Honest. Down-to-Earth.</p>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/photos/image1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/photos/image2.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/photos/image3.jpg" alt="Third slide">
         </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <p class="mt-3">First Time Fix It was established in 2017 by veteran and mechanic John Garza.</p>
+    <p>Our mechanics have more than 30 years of combined experience. We believe in providing high-quality repairs with high-quality parts at a reasonable price.</p>
+    <p>And, just to back you up, we provide a 12-month/12-000-mile warranty with all of our repairs.</p>
+    <p>We ensure the proper time is taken with every job to make sure each vehicle is accurately diagnosed and repaired without any surprises or comebacks.</p>
+    <p class="text-center"><strong>At First Time Fix It, we fix it the first time.</strong></p>
+  </div>
 <!--Footer-->      
-      <div class="container-fluid bg-dark">
-        <footer class="container text-white">
-          <div class="row p-2 d-flex justify-content-between">
-            <div class="col-6 p-0">
-              <p class="my-auto">&#169; 2020 First Time Fix It</p>
-            </div>  
-            <div class="col-6 p-0 d-flex justify-content-end">
-              <a href="#"><i class="fab fa-facebook-f my-auto"></i></a>
-            </div>
-          </div>
-        </footer>
-      </div>
+  <footer class="container d-flex justify-content-between align-items-center bg-dark text-white fixed-bottom p-2">
+    <p class="m-0">&#169; 2020 First Time Fix It</p>
+    <a href="https://www.facebook.com/firsttimefixit" target="_blank">
+      <i class="fab fa-facebook-f my-auto"></i>
+    </a>
+  </footer>
+  
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="vendors/jquery/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      var rootElement = document.documentElement;
+      var scrollToTopBtn = document.querySelector(".toTopButton");
+      function handleScroll() {
+        // Do something on scroll
+        var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+        if ((rootElement.scrollTop / scrollTotal ) > 0.25 ) {
+          // Show button
+          scrollToTopBtn.classList.add("showBtn")
+        } else {
+          // Hide button
+          scrollToTopBtn.classList.remove("showBtn")
+        }
+      }
+      function scrollToTop() {
+      // Scroll to top logic
+        rootElement.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        })
+      }
+      scrollToTopBtn.addEventListener("click", scrollToTop)
+      document.addEventListener("scroll", handleScroll)
+    </script>
   </body>
 </html>
