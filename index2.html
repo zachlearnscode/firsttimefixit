@@ -21,8 +21,8 @@
         min-height: 301px;
       }
       #parallax2 {
-        background-image: url(images/photos/inspect.jpg);
-        min-height: 120px;
+        background-image: url(images/photos/engine2.jpg);
+        min-height: 130px;
       }
     </style>
 </head>
@@ -78,25 +78,25 @@
         </div>
       </div>
     </div>  
-  <!--Our Services-->
+<!--Our Services-->
   <a id="services"></a>
-  <div class="container-fluid bg-light border-bottom" style="padding-top:25px">
+  <div class="container-fluid border-bottom" style="padding-top:25px">
     <div class="container pt-3">
       <h2>Our Services</h2>
-      <p>Whether it's routine service or a major repair, we promise that you will be completely satisfied with our work.</p>
-      <p><mark>We provide a <strong>12-month/12,000-mile warranty</strong> with all of our repairs for your peace of mind.</mark></p>
+      <p>Whether it's a routine service or a major repair, our experienced mechanics are committed to providing quality work at a competitive price.</p>
+      <p>Explore all of our services below.</p>
+      <p class="alert alert-info text-center p-2">All of our repairs come with a <strong>12-month/12,000-mile warranty</strong>.</p>
     </div>
     <!--Begin Maint. Accordion-->
     <div class="container">
-      <h3 class="mb-2">Maintenance</h3>
-        <div class="accordion" id="maintenanceAccordion">
+        <div class="accordion" id="accordion">
           <div class="card">
             <div class="card-header" id="headingOne">
               <h3 class="mb-0">
                 <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fas fa-oil-can"></i> Full Synthetic Oil Change</button>									
               </h3>
             </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#maintenanceAccordion">
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
               <div class="card-body">
                 <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages.
               </div>  
@@ -108,26 +108,19 @@
               <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fas fa-tint"></i> Fluid Exchanges and Flushes</button>
             </h2>
           </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#maintenanceAccordion">
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
               <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
             </div>
           </div>
         </div>
-        <button type="button" class="btn btn-primary d-block mx-auto my-3">
-          <a href="#" class="text-white">Call to Schedule Service</a>
-        </button>
-      </div>
-      <!--Begin Repair Accordion-->
-      <h3 class="mt-3 mb-2">Repairs</h3>
-      <div class="accordion" id="repairAccordion">
         <div class="card">
           <div class="card-header" id="repairHeadingOne">
             <h2 class="mb-0">
               <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#repairCollapseOne"><i class="fas fa-drum-steelpan"></i> Brakes</button>		
             </h2>
           </div>
-          <div id="repairCollapseOne" class="collapse" aria-labelledby="repairHeadingOne" data-parent="#repairAccordion">
+          <div id="repairCollapseOne" class="collapse" aria-labelledby="repairHeadingOne" data-parent="#accordion">
             <div class="card-body">
               <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
             </div>
@@ -139,7 +132,7 @@
               <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#repairCollapseTwo"><i class="fas fa-car-battery"></i> Battery Replacement</button>									
             </h2>
           </div>
-          <div id="repairCollapseTwo" class="collapse" aria-labelledby="repairHeadingTwo" data-parent="#repairAccordion">
+          <div id="repairCollapseTwo" class="collapse" aria-labelledby="repairHeadingTwo" data-parent="#accordion">
             <div class="card-body">
               <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
             </div>
@@ -151,7 +144,7 @@
               <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#repairCollapseThree"><i class="fas fa-wrench"></i> Suspension</button>							
             </h2>
           </div>
-          <div id="repairCollapseThree" class="collapse" aria-labelledby="repairHeadingThree" data-parent="#repairAccordion">
+          <div id="repairCollapseThree" class="collapse" aria-labelledby="repairHeadingThree" data-parent="#accordion">
             <div class="card-body">
               <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
             </div>
@@ -163,7 +156,7 @@
               <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#repairCollapseFour"><i class="fas fa-cogs"></i> Engine</button>									
             </h2>
           </div>
-          <div id="repairCollapseFour" class="collapse" aria-labelledby="repairHeadingFour" data-parent="#repairAccordion">
+          <div id="repairCollapseFour" class="collapse" aria-labelledby="repairHeadingFour" data-parent="#accordion">
             <div class="card-body">
               <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
             </div>
@@ -175,28 +168,21 @@
               <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#repairCollapseFive"><i class="fas fa-exclamation-triangle"></i> Diagnostic</button>		
             </h2>
           </div>
-          <div id="repairCollapseFive" class="collapse" aria-labelledby="repairHeadingFive" data-parent="#repairAccordion">
+          <div id="repairCollapseFive" class="collapse" aria-labelledby="repairHeadingFive" data-parent="#accordion">
             <div class="card-body">
               <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
             </div>
           </div>
         </div>
+        <button type="button" class="btn btn-primary d-block mx-auto my-3">
+          <a href="#" class="text-white">Call to Schedule Service</a>
+        </button>
       </div>
-      <button type="button" class="btn btn-primary d-block mx-auto my-3">
-        <a href="#" class="text-white">Call to Schedule Service</a>
-      </button>
     </div>
   </div>
-  <div class="parallax" id="parallax2">
-    <div class="container-fluid py-5">
-      <div class="container alert alert-info py-auto mb-0">
-        <p class="text-center mb-0 lead"><strong>Enjoy a 12,000-month/12,000-mile warranty on all repairs.</strong></p>
-      </div>
-  </div>
-  </div> 
 <!--Reviews-->
   <a id="reviews"></a>
-  <div class="container-fluid border-bottom">
+  <div class="container-fluid bg-light border-bottom">
     <div class="container pt-3" style="padding-top:25px">
       <h2>Reviews</h2>
       <p>Check out what our customers are saying.</p>
@@ -204,7 +190,7 @@
   </div>
 <!--Contact-->
   <a id="contact"></a>
-  <div class="container-fluid bg-light border-bottom">
+  <div class="container-fluid border-bottom">
     <div class="container pt-3" style="padding-top:25px">
       <h2>Contact</h2>
       <p>Use the form below to contact us. Arrange an appointment, request a quote or submit a question.</p>
@@ -244,18 +230,26 @@
     </div>
   </div>
 <!--About-->    
-      <div class="container-fluid border-bottom">
+      <div class="container-fluid bg-light border-bottom">
         <div class="container pt-3">
           <h2>About</h2>
           <p class="lead">Upfront. Honest. Down-to-Earth.</p>
-          <p></p>
+          <p>First Time Fix It was established in 2017 by veteran and mechanic John Garza.</p>
+          <p>Our mechanics have more than 30 years of combined experience. We believe in providing high-quality repairs with high-quality parts at a reasonable price.</p>
+          <p>And, just to back you up, we provide a 12-month/12-000-mile warranty with all of our repairs.</p>
+          <p>We ensure the proper time is taken with every job to make sure each vehicle is accurately diagnosed and repaired without any surprises or comebacks.</p>
+          <p class="text-center"><strong>At First Time Fix It, we fix it the first time.</strong></p>
         </div>
       </div>
+<!--Footer-->      
       <div class="container-fluid bg-dark">
         <footer class="container text-white">
-          <div class="row">
-            <div class="col-12">
-              <p>First Time Fix It</p>
+          <div class="row p-2 d-flex justify-content-between">
+            <div class="col-6 p-0">
+              <p class="my-auto">&#169; 2020 First Time Fix It</p>
+            </div>  
+            <div class="col-6 p-0 d-flex justify-content-end">
+              <a href="#"><i class="fab fa-facebook-f my-auto"></i></a>
             </div>
           </div>
         </footer>
