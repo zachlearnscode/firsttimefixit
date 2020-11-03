@@ -22,6 +22,9 @@
       }
       #reviewBG {
         background-image: url(images/photos/inspect.jpg);
+      }
+      #reviewBG,
+      #reviewBG .container {
         min-height: 600px
       }
       .toTopButton {
@@ -191,138 +194,148 @@
   </div>
 <!--Reviews-->
   <div class="parallax" id="reviewBG">
-    <div class="container text-white" id="reviews" style="padding-top:40px">
-      <h2>Reviews</h2>
-      <p class="m-0">Check out what our customers are saying.</p>
-    </div>
-    <div id="reviewsCarousel" class="carousel slide my-auto" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="card m-3">
-            <div class="card-body">
-              <div class="card-title d-flex justify-content-start align-items-center">
-                <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i> 
-              </div>
-              <p class="card-text">AMAZING SERVICE! I have finally found a mechanic I can trust that won’t break the bank. Did my oil change for HALF the price another shop offered me and even sent me a full inspection of my car!!! Will be going back for every service I need. highly recommend</p>
-              <div class="d-flex justify-content-end align-items-center">
-                <img src="https://lh3.googleusercontent.com/-bj4kmWHKO9k/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucl5WLq9gSc94Ls_9kUxzsmmx82nyA/w40-h40-p-c0x00000000-rp/photo.jpg" alt="User avatar" style="width:32px;height:32px;border-radius:50%;margin-right:20px;">
-                <div class="pb-2">
-                  <div class="card-text text-right"><strong>bella Oliver</strong></div>
-                  <p class="card-text text-right"><small class="text-muted">Oct. 28, 2020</small></p>
-                </div>
-              </div>
-              <hr class="m-1">
-              <p class="card-text text-center pt-1"><small class="text-muted"><a href="https://goo.gl/maps/fyzL6QQrFFMAqV7n8" target="_blank">View on Google <i class="fas fa-external-link-alt"></i></a></small></p>
-            </div>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col text-white" id="reviews" style="padding-top:40px">
+          <h2>Reviews</h2>
+          <p class="m-0">Check out what our customers are saying.</p>
         </div>
-        <div class="carousel-item">
-          <div class="card m-3">
-            <div class="card-body">
-              <div class="card-title">
-                <div class="card-title d-flex justify-content-start align-items-center">
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i> 
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div id="reviewsCarousel" class="carousel slide my-auto" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card m-3">
+                  <div class="card-body">
+                    <div class="card-title d-flex justify-content-start align-items-center">
+                      <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                      <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                      <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                      <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                      <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i> 
+                    </div>
+                    <p class="card-text">AMAZING SERVICE! I have finally found a mechanic I can trust that won’t break the bank. Did my oil change for HALF the price another shop offered me and even sent me a full inspection of my car!!! Will be going back for every service I need. highly recommend</p>
+                    <div class="d-flex justify-content-end align-items-center">
+                      <img src="https://lh3.googleusercontent.com/-bj4kmWHKO9k/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucl5WLq9gSc94Ls_9kUxzsmmx82nyA/w40-h40-p-c0x00000000-rp/photo.jpg" alt="User avatar" style="width:32px;height:32px;border-radius:50%;margin-right:20px;">
+                      <div class="pb-2">
+                        <div class="card-text text-right"><strong>bella Oliver</strong></div>
+                        <p class="card-text text-right"><small class="text-muted">Oct. 28, 2020</small></p>
+                      </div>
+                    </div>
+                    <hr class="m-1">
+                    <p class="card-text text-center pt-1"><small class="text-muted"><a href="https://goo.gl/maps/fyzL6QQrFFMAqV7n8" target="_blank">View on Google <i class="fas fa-external-link-alt"></i></a></small></p>
+                  </div>
                 </div>
               </div>
-              <p class="card-text">John is great to work with and is an excellent mechanic. This is the second time he's worked on my family's vehicles and I'll keep going back. He uses quality parts and has very competitive prices.</p>
-              <div class="d-flex justify-content-end align-items-center">
-                <img src="https://lh6.googleusercontent.com/-9qAhBM6-dx4/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnt-rwCmzmYQQqPi5NZH_QkxaLOJg/w40-h40-p-c0x00000000-rp/photo.jpg" alt="User avatar" style="width:32px;height:32px;border-radius:50%;margin-right:20px;">
-                <div class="pb-2">
-                  <div class="card-text text-right"><strong>D B</strong></div>
-                  <p class="card-text text-right"><small class="text-muted">Oct. 29, 2020</small></p>
+              <div class="carousel-item">
+                <div class="card m-3">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <div class="card-title d-flex justify-content-start align-items-center">
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i> 
+                      </div>
+                    </div>
+                    <p class="card-text">John is great to work with and is an excellent mechanic. This is the second time he's worked on my family's vehicles and I'll keep going back. He uses quality parts and has very competitive prices.</p>
+                    <div class="d-flex justify-content-end align-items-center">
+                      <img src="https://lh6.googleusercontent.com/-9qAhBM6-dx4/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnt-rwCmzmYQQqPi5NZH_QkxaLOJg/w40-h40-p-c0x00000000-rp/photo.jpg" alt="User avatar" style="width:32px;height:32px;border-radius:50%;margin-right:20px;">
+                      <div class="pb-2">
+                        <div class="card-text text-right"><strong>D B</strong></div>
+                        <p class="card-text text-right"><small class="text-muted">Oct. 29, 2020</small></p>
+                      </div>
+                    </div>
+                    <hr class="m-1">
+                    <p class="card-text text-center pt-1"><small class="text-muted"><a href="https://goo.gl/maps/RayRxSxTNvj1E6CA7" target="_blank">View on Google <i class="fas fa-external-link-alt"></i></a></small></p>  
+                  </div>
                 </div>
               </div>
-              <hr class="m-1">
-              <p class="card-text text-center pt-1"><small class="text-muted"><a href="https://goo.gl/maps/RayRxSxTNvj1E6CA7" target="_blank">View on Google <i class="fas fa-external-link-alt"></i></a></small></p>  
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card m-3">
-            <div class="card-body">
-              <div class="card-title">
-                <div class="card-title d-flex justify-content-start align-items-center">
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i> 
+              <div class="carousel-item">
+                <div class="card m-3">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <div class="card-title d-flex justify-content-start align-items-center">
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i> 
+                      </div>
+                    </div>
+                    <p class="card-text">The owner John Garza really knows his craft. I own a 2005 low mileage ML 350 Mercedes SUV. John got me fixed up, and showed me several areas of concern, which I’ve made another appointment so he can get this done before winter.<br>I’m also impressed with his customer service. I highly recommend this shop for your auto needs.</p>
+                    <div class="d-flex justify-content-end align-items-center">
+                      <img src="https://lh3.googleusercontent.com/a-/AOh14GjSekbX-SmQ0vUdATSqjTBtXDcTL0X6y0Mnuw6WJg=w40-h40-p-c0x00000000-rp" alt="User avatar" style="width:32px;height:32px;border-radius:50%;margin-right:20px;">
+                      <div class="pb-2">
+                        <div class="card-text text-right"><strong>Don McNulty</strong></div>
+                        <p class="card-text text-right"><small class="text-muted">Oct. 26, 2020</small></p>
+                      </div>  
+                    </div>
+                    <hr class="m-1">
+                    <p class="card-text text-center pt-1"><small class="text-muted"><a href="https://goo.gl/maps/FasiceNHd13XBarm8" target="_blank">View on Google <i class="fas fa-external-link-alt"></i></a></small></p> 
+                  </div>
                 </div>
               </div>
-              <p class="card-text">The owner John Garza really knows his craft. I own a 2005 low mileage ML 350 Mercedes SUV. John got me fixed up, and showed me several areas of concern, which I’ve made another appointment so he can get this done before winter.<br>I’m also impressed with his customer service. I highly recommend this shop for your auto needs.</p>
-              <div class="d-flex justify-content-end align-items-center">
-                <img src="https://lh3.googleusercontent.com/a-/AOh14GjSekbX-SmQ0vUdATSqjTBtXDcTL0X6y0Mnuw6WJg=w40-h40-p-c0x00000000-rp" alt="User avatar" style="width:32px;height:32px;border-radius:50%;margin-right:20px;">
-                <div class="pb-2">
-                  <div class="card-text text-right"><strong>Don McNulty</strong></div>
-                  <p class="card-text text-right"><small class="text-muted">Oct. 26, 2020</small></p>
-                </div>  
-              </div>
-              <hr class="m-1">
-              <p class="card-text text-center pt-1"><small class="text-muted"><a href="https://goo.gl/maps/FasiceNHd13XBarm8" target="_blank">View on Google <i class="fas fa-external-link-alt"></i></a></small></p> 
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card m-3">
-            <div class="card-body">
-              <div class="card-title">
-                <div class="card-title d-flex justify-content-start align-items-center">
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+              <div class="carousel-item">
+                <div class="card m-3">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <div class="card-title d-flex justify-content-start align-items-center">
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                      </div>
+                    </div>
+                    <p class="card-text">John worked hard to get my sons truck for a move to Colorado. He found and fixed issues including a leaking fuel line that the dealership didn’t catch. He’s great to work with and feel confident that my son’s truck will make it the distance!</p>
+                    <div class="d-flex justify-content-end align-items-center">
+                      <img src="https://lh3.googleusercontent.com/a-/AOh14Gi4f05Z0I4wdBOi07nfiitHW3sHbPwPUgUUUuVt=w40-h40-p-c0x00000000-rp" alt="User avatar" style="width:32px;height:32px;border-radius:50%;margin-right:20px;">
+                      <div class="pb-2">
+                        <div class="card-text text-right"><strong>Liz Goyer</strong></div>
+                        <p class="card-text text-right"><small class="text-muted">Oct. 28, 2020</small></p>
+                      </div>
+                    </div>
+                    <hr class="m-1">
+                    <p class="card-text text-center pt-1"><small class="text-muted"><a href="https://goo.gl/maps/sGSYbVCLXwG5wUfv8" target="_blank">View on Google <i class="fas fa-external-link-alt"></i></a></small></p>
+                  </div>
                 </div>
               </div>
-              <p class="card-text">John worked hard to get my sons truck for a move to Colorado. He found and fixed issues including a leaking fuel line that the dealership didn’t catch. He’s great to work with and feel confident that my son’s truck will make it the distance!</p>
-              <div class="d-flex justify-content-end align-items-center">
-                <img src="https://lh3.googleusercontent.com/a-/AOh14Gi4f05Z0I4wdBOi07nfiitHW3sHbPwPUgUUUuVt=w40-h40-p-c0x00000000-rp" alt="User avatar" style="width:32px;height:32px;border-radius:50%;margin-right:20px;">
-                <div class="pb-2">
-                  <div class="card-text text-right"><strong>Liz Goyer</strong></div>
-                  <p class="card-text text-right"><small class="text-muted">Oct. 28, 2020</small></p>
+              <div class="carousel-item">
+                <div class="card m-3">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <div class="card-title d-flex justify-content-start align-items-center">
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
+                        <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i> 
+                      </div>
+                    </div>
+                    <p class="card-text">Our family has now taken four cars to First Time Fix It. And we’re happy to be saving money for quality work.</p>
+                    <div class="d-flex justify-content-end align-items-center">
+                      <img src="https://lh5.googleusercontent.com/-BuuQpOF2jK4/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnFZY2E0cKNflkMKuJBGozQo39vqg/w40-h40-p-c0x00000000-rp/photo.jpg" alt="User avatar" style="width:32px;height:32px;border-radius:50%;margin-right:20px;">
+                      <div class="pb-2">
+                        <div class="card-text text-right"><strong>John McGee</strong></div>
+                        <p class="card-text text-right"><small>Oct. 31, 2020</small></p>
+                      </div>
+                    </div>
+                    <hr class="m-1">
+                    <p class="card-text text-center pt-1"><small class="text-muted"><a href="https://goo.gl/maps/CUVLBfXFmbqF3Ws1A" target="_blank">View on Google <i class="fas fa-external-link-alt"></i></a></small></p>
+                  </div>
                 </div>
               </div>
-              <hr class="m-1">
-              <p class="card-text text-center pt-1"><small class="text-muted"><a href="https://goo.gl/maps/sGSYbVCLXwG5wUfv8" target="_blank">View on Google <i class="fas fa-external-link-alt"></i></a></small></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card m-3">
-            <div class="card-body">
-              <div class="card-title">
-                <div class="card-title d-flex justify-content-start align-items-center">
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i>
-                  <i class="fas fa-star" style="color:#FFD700;width:25px;height:25px;"></i> 
-                </div>
-              </div>
-              <p class="card-text">Our family has now taken four cars to First Time Fix It. And we’re happy to be saving money for quality work.</p>
-              <div class="d-flex justify-content-end align-items-center">
-                <img src="https://lh5.googleusercontent.com/-BuuQpOF2jK4/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnFZY2E0cKNflkMKuJBGozQo39vqg/w40-h40-p-c0x00000000-rp/photo.jpg" alt="User avatar" style="width:32px;height:32px;border-radius:50%;margin-right:20px;">
-                <div class="pb-2">
-                  <div class="card-text text-right"><strong>John McGee</strong></div>
-                  <p class="card-text text-right"><small>Oct. 31, 2020</small></p>
-                </div>
-              </div>
-              <hr class="m-1">
-              <p class="card-text text-center pt-1"><small class="text-muted"><a href="https://goo.gl/maps/CUVLBfXFmbqF3Ws1A" target="_blank">View on Google <i class="fas fa-external-link-alt"></i></a></small></p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="d-flex justify-content-center align-items-center">
+
+    <div class="d-flex justify-content-center align-items-end">
       <button type="button" class="btn btn-primary mb-3 align-bottom"><a href="https://goo.gl/maps/aM6wr6KTR7xXBD3M8" target="_blank" class="text-white">See All Reviews on Google</a></button>
     </div>
   </div>
